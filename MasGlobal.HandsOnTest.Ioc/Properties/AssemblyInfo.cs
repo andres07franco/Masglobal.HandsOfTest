@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("MasGlobal.HandsOnTest")]
+[assembly: AssemblyTitle("MasGlobal.HandsOnTest.Ioc")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MasGlobal.HandsOnTest")]
+[assembly: AssemblyProduct("MasGlobal.HandsOnTest.Ioc")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("474c34d5-c6d2-44a3-90af-9341ebf277e3")]
+[assembly: Guid("30d3d37b-f6ae-46d3-9c19-b470f28038d2")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //
