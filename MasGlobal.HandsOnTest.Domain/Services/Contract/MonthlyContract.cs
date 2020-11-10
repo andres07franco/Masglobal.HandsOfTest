@@ -1,9 +1,9 @@
 ﻿
 namespace MasGlobal.HandsOnTest.Domain.Services.Contract
 {
-    using MasGlobal.HandOnTest.Domain.Interfaces.Contract;
+    using MasGlobal.HandsOnTest.Domain.Interfaces.Contract;
 
-    public class MonthlyContract : IContract
+    public class MonthlyContract : IContractCalculator
     {
         private readonly int MonthsOfYear;
 

@@ -1,9 +1,8 @@
 ﻿namespace MasGlobal.HandsOnTest.Domain.Services.Contract
 {
 
-    using MasGlobal.HandOnTest.Domain.Interfaces.Contract;
-    using MasGlobal.HandOnTest.Domain.Shared.Enums;
     using MasGlobal.HandsOnTest.Domain.Interfaces.Contract;
+    using MasGlobal.HandsOnTest.Domain.Shared.Enums;
     using MasGlobal.HandsOnTest.Domain.Shared.Exceptions;
 
     public class ContractFactoryMethod: IContractFactoryMethod
@@ -17,7 +16,7 @@
             this.MonthOfYear = MonthOfYear;
         }
 
-        public IContract CreateContract(ContractTypeEnum contractType)
+        public IContractCalculator CreateContract(ContractTypeEnum contractType)
         {
             switch (contractType)
             {

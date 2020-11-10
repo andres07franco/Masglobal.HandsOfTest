@@ -1,6 +1,6 @@
-﻿namespace MasGlobal.HandOnTest.Domain.Interfaces.Base
+﻿namespace MasGlobal.HandsOnTest.Domain.Interfaces.Base
 {
-    using MasGlobal.HandOnTest.Domain.Entities;
+    using MasGlobal.HandsOnTest.Domain.Entities;
     using System.Collections.Generic;
 
     public interface IReadRepository<TEntity> where TEntity : BaseEntity

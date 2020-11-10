@@ -1,5 +1,4 @@
-﻿
-namespace MasGlobal.HandOnTest.Domain.Shared.Enums
+﻿namespace MasGlobal.HandsOnTest.Domain.Shared.Enums
 {
     public enum ContractTypeEnum
     {

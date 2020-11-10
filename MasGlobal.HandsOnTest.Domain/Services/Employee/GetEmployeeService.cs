@@ -1,11 +1,10 @@
 ﻿
 namespace MasGlobal.HandsOnTest.Domain.Services.Employee
 {
-    using System;
     using System.Collections.Generic;
     using System.Linq;
-    using MasGlobal.HandOnTest.Domain.Entities;
-    using MasGlobal.HandOnTest.Domain.Interfaces.Employee;
+    using MasGlobal.HandsOnTest.Domain.Entities;
+    using MasGlobal.HandsOnTest.Domain.Interfaces.Employee;
     using MasGlobal.HandsOnTest.Domain.Interfaces.Contract;
     using MasGlobal.HandsOnTest.Domain.Shared.Exceptions;
 
@@ -57,12 +56,12 @@ namespace MasGlobal.HandsOnTest.Domain.Services.Employee
         {
             try
             {
-                var contract = contractFactory.CreateContract(employee.ContractType);
-                employee.AnualSalary = contract.CalculeAnnualSalary(employee.Salary);
+                var contract = contractFactory.CreateContract(employee.Contract.ContractType);
+                employee.Contract.AnnualSalary = contract.CalculeAnnualSalary(employee.Contract.Salary);
             }
             catch (DomainException)
             {
-                employee.AnualSalary = 0;
+                employee.Contract.AnnualSalary = 0;
             }
 
         }

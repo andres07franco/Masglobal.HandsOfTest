@@ -1,4 +1,4 @@
-﻿namespace MasGlobal.HandOnTest.Domain.Entities
+﻿namespace MasGlobal.HandsOnTest.Domain.Entities
 {
     public class BaseEntity
     {

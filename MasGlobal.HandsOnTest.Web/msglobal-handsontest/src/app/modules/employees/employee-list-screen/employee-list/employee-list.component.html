@@ -1,0 +1,27 @@
+<table class="table table-bordered table-striped" id="dataTable" width="100%" cellspacing="0">
+    <thead>
+        <tr>
+            <th class="text-center">Actions</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Contrac Type</th>
+            <th class="text-right">Salary</th>
+            <th class="text-right">Annual Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ><td colspan="7" class="text-center" *ngIf="employees.length == 0">No employees found</td></tr>
+        <tr *ngFor="let employee of employees">
+            <td class="text-center" >
+                <app-view-buttom (onPress)="onPressButtomViewHandle(employee.Id)"></app-view-buttom>
+            </td>
+            <td>{{employee.Id}}</td>
+            <td>{{employee.Name}}</td>
+            <td>{{employee.Role.Name}}</td>
+            <td>{{employee.Contract.ContractType}}</td>
+            <td class="text-right">{{employee.Contract.Salary}}</td>
+            <td class="text-right">{{employee.Contract.AnnualSalary}}</td>
+        </tr>
+    </tbody>
+</table>

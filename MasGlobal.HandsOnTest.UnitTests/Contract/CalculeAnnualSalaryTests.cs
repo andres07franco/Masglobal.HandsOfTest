@@ -1,5 +1,5 @@
 ﻿using System;
-using MasGlobal.HandOnTest.Domain.Shared.Enums;
+using MasGlobal.HandsOnTest.Domain.Shared.Enums;
 using MasGlobal.HandsOnTest.Domain.Interfaces.Contract;
 using MasGlobal.HandsOnTest.Domain.Services.Contract;
 using MasGlobal.HandsOnTest.Domain.Shared.Exceptions;
@@ -42,7 +42,7 @@ namespace MasGlobal.HandsOnTest.UnitTests
         }
 
         [TestMethod]
-        public void Given_ContracType_None_Then_TrowsContratTypeNotSupportException()
+        public void Given_ContracType_Is_None_Then_TrowsContratTypeNotSupportException()
         {
             Action actual = () => contractFactory.CreateContract(ContractTypeEnum.None);
             Assert.ThrowsException<ContratTypeNotSupportException>(actual);

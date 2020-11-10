@@ -1,7 +1,7 @@
 ﻿
-namespace MasGlobal.HandOnTest.Domain.Interfaces.Employee
+namespace MasGlobal.HandsOnTest.Domain.Interfaces.Employee
 {
-    using MasGlobal.HandOnTest.Domain.Entities;
+    using MasGlobal.HandsOnTest.Domain.Entities;
     using System.Collections.Generic;
 
     public interface IGetEmployeeService

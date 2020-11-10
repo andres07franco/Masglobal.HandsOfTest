@@ -1,0 +1,57 @@
+<div class="card shadow mb-4">
+    
+    <div class="card-body">
+            <app-back-buttom (onPress)="onPressBackButtomHandel()"></app-back-buttom>
+        <div class="container">
+            <div class="row">
+                  <div class="col-xs-12 col-sm-9    ">
+               
+                    <!-- User profile -->
+                    <div class="panel panel-default">
+
+                      <div class="panel-body">
+                        <div class="profile__avatar">
+                          <img src="https://i.pravatar.cc/300" alt="...">
+                        </div>
+                        <div class="profile__header">
+                          <h4>{{employee.Name}} <small>{{employee.Role.Name}}</small></h4>
+                          <p class="text-muted">
+                           {{employee.Name}} is a good  {{employee.Role.Name}}
+                          </p>
+
+                        </div>
+                      </div>
+                    </div>
+            
+                    <!-- User info -->
+                    <div class="panel panel-default">
+
+                      <div class="panel-body">
+                        <table class="table profile__table">
+                          <tbody>
+                            <tr>
+                              <th><strong>Contract Type</strong></th>
+                              <td>{{employee?.Contract?.ContractType}}</td>
+                            </tr>
+                            <tr>
+                              <th><strong>Salary</strong></th>
+                              <td>{{employee?.Contract?.Salary}}</td>
+                            </tr>
+                            <tr>
+                              <th><strong>Annual Salary</strong></th>
+                              <td>{{employee?.Contract?.AnnualSalary}}</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    

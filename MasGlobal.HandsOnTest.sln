@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasGlobal.HandsOnTest.Application", "MasGlobal.HandsOnTest.Application\MasGlobal.HandsOnTest.Application.csproj", "{96131A74-8056-4930-80D6-6896314F40E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasGlobal.HandsOnTest.DataAcces", "MasGlobal.HandsOnTest.DataAcces\MasGlobal.HandsOnTest.DataAcces.csproj", "{C62C2244-A0FF-4A7F-957D-D181B5CBE5D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasGlobal.HandsOnTest.DataAccess", "MasGlobal.HandsOnTest.DataAcces\MasGlobal.HandsOnTest.DataAccess.csproj", "{C62C2244-A0FF-4A7F-957D-D181B5CBE5D1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasGlobal.HandsOnTest.Ioc", "MasGlobal.HandsOnTest.Ioc\MasGlobal.HandsOnTest.Ioc.csproj", "{30D3D37B-F6AE-46D3-9C19-B470F28038D2}"
 EndProject

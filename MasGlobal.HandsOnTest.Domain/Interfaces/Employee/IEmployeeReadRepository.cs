@@ -1,7 +1,7 @@
-﻿namespace MasGlobal.HandOnTest.Domain.Interfaces.Employee
+﻿namespace MasGlobal.HandsOnTest.Domain.Interfaces.Employee
 {
-    using MasGlobal.HandOnTest.Domain.Entities;
-    using MasGlobal.HandOnTest.Domain.Interfaces.Base;
+    using MasGlobal.HandsOnTest.Domain.Interfaces.Base;
+    using MasGlobal.HandsOnTest.Domain.Entities;
 
     public interface IEmployeeReadRepository: IReadRepository<Employee>
     {

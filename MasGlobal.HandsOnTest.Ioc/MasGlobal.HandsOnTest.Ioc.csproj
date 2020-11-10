@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>30d3d37b-f6ae-46d3-9c19-b470f28038d2</ProjectGuid>
+    <ProjectGuid>{30D3D37B-F6AE-46D3-9C19-B470F28038D2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MasGlobal.HandsOnTest.Ioc</RootNamespace>
@@ -31,24 +31,45 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Intallers\ApplicationInstaller.cs" />
+    <Compile Include="Intallers\Configurations\ConfigurationFactory.cs" />
+    <Compile Include="Intallers\DataAccessInstaller.cs" />
+    <Compile Include="Intallers\DomainInstaller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RootInstaller.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MasGlobal.HandsOnTest.Application\MasGlobal.HandsOnTest.Application.csproj">
+      <Project>{96131A74-8056-4930-80D6-6896314F40E8}</Project>
+      <Name>MasGlobal.HandsOnTest.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MasGlobal.HandsOnTest.DataAcces\MasGlobal.HandsOnTest.DataAccess.csproj">
+      <Project>{c62c2244-a0ff-4a7f-957d-d181b5cbe5d1}</Project>
+      <Name>MasGlobal.HandsOnTest.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MasGlobal.HandsOnTest.Domain\MasGlobal.HandsOnTest.Domain.csproj">
+      <Project>{725030E8-D83E-465C-BF01-B90783FACF26}</Project>
+      <Name>MasGlobal.HandsOnTest.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- </Project>
+</Project>
